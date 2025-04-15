@@ -1,12 +1,3 @@
-*** 워드 파일에 전자 서명하기 ***
-
-
-/
-├── manifest.xml       # Office 애드인 매니페스트 파일
-├── src/
-│   ├── taskpane.html  # 작업창 UI
-│   ├── taskpane.css   # 스타일시트
-│   ├── taskpane.js    # Office.js API 연동 로직
 # Office.js 전자서명 플러그인
 
 ## 프로젝트 구조
