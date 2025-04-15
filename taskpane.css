@@ -1,0 +1,115 @@
+/* uae30ubcf8 uc2a4ud0c0uc77c */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ms-welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #f3f2f1;
+}
+
+.ms-welcome__header {
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.ms-welcome__header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.ms-welcome__main {
+    flex: 1 0 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* uc11cuba85 uce94ubc84uc2a4 uc2a4ud0c0uc77c */
+#signature-canvas-container {
+    margin-bottom: 20px;
+}
+
+#signature-canvas {
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    touch-action: none;
+}
+
+/* ubc84ud2bc uc2a4ud0c0uc77c */
+.button-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.ms-Button {
+    min-width: 100px;
+}
+
+/* uc800uc7a5ub41c uc11cuba85 uc2a4ud0c0uc77c */
+#signature-list-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#saved-signatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.saved-signature-item {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.saved-signature-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.saved-signature-item.selected {
+    border: 2px solid #0078d4;
+}
+
+.saved-signature-delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #e81123;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 10;
+}

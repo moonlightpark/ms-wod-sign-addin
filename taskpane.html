@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>전자서명 플러그인</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- jQuery and Fabric UI -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 애플리케이션 스타일시트 및 스크립트 -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLight">
+        <h1 class="ms-font-xxl">전자서명 플러그인</h1>
+    </header>
+    <section id="main-content" class="ms-welcome__main">
+        <div class="ms-Grid">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div id="signature-canvas-container">
+                        <h2 class="ms-font-l">서명 작성</h2>
+                        <canvas id="signature-canvas" width="320" height="200"></canvas>
+                        <div class="button-row">
+                            <button id="btn-clear" class="ms-Button ms-Button--primary">
+                                <span class="ms-Button-label">지우기</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div id="signature-list-container">
+                        <h2 class="ms-font-l">저장된 서명</h2>
+                        <div id="saved-signatures">
+                            <!-- 저장된 서명들이 여기에 표시됩니다 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div class="button-row">
+                        <button id="btn-save" class="ms-Button ms-Button--primary">
+                            <span class="ms-Button-label">서명 저장</span>
+                        </button>
+                        <button id="btn-insert" class="ms-Button ms-Button--primary">
+                            <span class="ms-Button-label">문서에 삽입</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 애플리케이션 스크립트 -->
+    <script type="text/javascript" src="signature.js"></script>
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>
